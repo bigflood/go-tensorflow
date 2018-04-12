@@ -18,4 +18,6 @@ RUN wget https://github.com/tensorflow/tensorflow/archive/v1.7.0.zip \
   && mv tensorflow-1.7.0/tensorflow/go ./tensorflow \
   && rm -rf tensorflow-1.7.0 v1.7.0.zip
 
+ENV TF_CPP_MIN_LOG_LEVEL 2
+
 WORKDIR $GOPATH
